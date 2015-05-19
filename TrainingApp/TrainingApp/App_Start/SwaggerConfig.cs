@@ -2,7 +2,6 @@ using System.Web.Http;
 using WebActivatorEx;
 using TrainingApp;
 using Swashbuckle.Application;
-using TrainingApp.Security;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
@@ -47,14 +46,6 @@ namespace TrainingApp
                         //        vc.Version("v2", "Swashbuckle Dummy API V2");
                         //        vc.Version("v1", "Swashbuckle Dummy API V1");
                         //    });
-
-                        var applyApiKeySecurity = new ApplyApiKeySecurity(
-                            key: "train_token",
-                            name:"Authorization",
-                            description:"Training Token",
-                            @in:"header"
-                            );
-                        applyApiKeySecurity.Apply(c);
 
                         // You can use "BasicAuth", "ApiKey" or "OAuth2" options to describe security schemes for the API.
                         // See https://github.com/swagger-api/swagger-spec/blob/master/versions/2.0.md for more details.
