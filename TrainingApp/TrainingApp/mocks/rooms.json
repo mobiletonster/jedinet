@@ -1,0 +1,25 @@
+[{
+    "id": 1,
+    "name": "E230",
+    "capacity": 10
+}, {
+    "id": 2,
+    "name": "E234",
+    "capacity": 10
+}, {
+    "id": 3,
+    "name": "E236",
+    "capacity": 20
+}, {
+    "id": 12,
+    "name": "E235",
+    "capacity": 20
+}, {
+    "id": 4,
+    "name": "E232",
+    "capacity": 50
+}, {
+  "id": 5,
+  "name": "MockRoom",
+  "capacity": 55
+  }]

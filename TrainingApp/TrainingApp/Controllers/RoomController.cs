@@ -19,7 +19,7 @@ namespace TrainingApp.Controllers
         }
 
         [HttpGet]
-        [Route("api/rooms")]
+        [Route("api/v2/rooms")]
         public List<Room> GetRooms()
         {
             var rooms = _roomService.GetRooms();

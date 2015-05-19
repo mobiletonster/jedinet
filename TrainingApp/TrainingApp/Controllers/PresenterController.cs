@@ -12,14 +12,13 @@ namespace TrainingApp.Controllers
     public class PresenterController : ApiController
     {
         private PresenterService _presenterService;
-
         public PresenterController()
         {
             _presenterService = new PresenterService();
         }
 
         [HttpGet]
-        [Route("api/participants")]
+        [Route("api/v2/participants")]
         public List<Presenter> GetPresenters()
         {
             var presenters = _presenterService.GetPresenters();

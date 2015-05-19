@@ -94,19 +94,57 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app.js" />
     <Content Include="App_Data\TrainingDB.mdf" />
     <Content Include="App_Data\TrainingDB_log.ldf">
       <DependentUpon>TrainingDB.mdf</DependentUpon>
     </Content>
+    <Content Include="build\app.css" />
+    <Content Include="components\article--participant\article--participant-controller.js" />
+    <Content Include="components\article--participant\article--participant-controller_test.js" />
+    <Content Include="components\article--participant\article--participant-service.js" />
+    <Content Include="components\article--participant\article--participant-service_test.js" />
+    <Content Include="components\article--participant\article--participant-template.html" />
+    <Content Include="components\article--room\article--room-controller.js" />
+    <Content Include="components\article--room\article--room-controller_test.js" />
+    <Content Include="components\article--room\article--room-directive.js" />
+    <Content Include="components\article--room\article--room-directive_test.js" />
+    <Content Include="components\article--room\article--room-filter.js" />
+    <Content Include="components\article--room\article--room-filter_test.js" />
+    <Content Include="components\article--room\article--room-service.js" />
+    <Content Include="components\article--room\article--room-service_test.js" />
+    <Content Include="components\article--room\article--room-template.html" />
+    <Content Include="components\article--training\article--training-controller.js" />
+    <Content Include="components\article--training\article--training-controller_test.js" />
+    <Content Include="components\article--training\article--training-service.js" />
+    <Content Include="components\article--training\article--training-service_test.js" />
+    <Content Include="components\article--training\article--training-template.html" />
+    <Content Include="components\avatar\avatar-directive.js" />
+    <Content Include="components\avatar\avatar-directive_test.js" />
+    <Content Include="components\avatar\avatar-template.html" />
+    <Content Include="components\edit-toggler\edit-toggler-directive.js" />
+    <Content Include="components\edit-toggler\edit-toggler-directive_test.js" />
+    <Content Include="components\nav\nav-directive.js" />
+    <Content Include="components\nav\nav-directive_test.js" />
+    <Content Include="components\nav\nav-template.html" />
     <Content Include="Global.asax" />
+    <Content Include="index.html" />
+    <Content Include="lib\angular-moment\angular-moment.min.js" />
+    <Content Include="lib\angular-resource\angular-resource.min.js" />
+    <Content Include="lib\angular-route\angular-route.min.js" />
+    <Content Include="lib\angular-sanitize\angular-sanitize.min.js" />
+    <Content Include="lib\angular\angular.min.js" />
+    <Content Include="lib\moment\min\moment.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\ClassScheduleController.cs" />
     <Compile Include="Controllers\PresenterController.cs" />
     <Compile Include="Controllers\RoomController.cs" />
     <Compile Include="Controllers\TrainingController.cs" />
+    <Compile Include="ExternalServices\ClassScheduleService.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -125,7 +163,26 @@
     <Compile Include="ViewModels\TrainingViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="build\app.css.map" />
+    <Content Include="components\article--participant\article--participant.scss" />
+    <Content Include="components\article--participant\README.md" />
+    <Content Include="components\article--room\article--room.scss" />
+    <Content Include="components\article--room\README.md" />
+    <Content Include="components\article--training\README.md" />
+    <Content Include="components\article\article.scss" />
+    <Content Include="components\article\README.md" />
+    <Content Include="components\avatar\avatar.scss" />
+    <Content Include="components\avatar\README.md" />
+    <Content Include="components\edit-toggler\edit-toggler.scss" />
+    <Content Include="components\edit-toggler\README.md" />
+    <Content Include="components\nav\nav.scss" />
+    <Content Include="components\nav\README.md" />
+    <Content Include="mocks\participants.json" />
+    <Content Include="mocks\rooms.json" />
+    <Content Include="mocks\trainings.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

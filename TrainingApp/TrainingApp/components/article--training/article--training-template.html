@@ -1,0 +1,19 @@
+<article class="article article--training" edit-toggler ng-repeat="training in trainings">
+
+	<input type="checkbox" class="article__edit-toggle-checkbox" id="edit-{{training.id}}" />
+	<label class="article__edit-toggle" for="edit-{{training.id}}">
+	</label>
+	<header class="article__header">
+	  <h1 class="article__headline" ng-model="training.title">{{training.name}}</h1>
+
+	  <!-- <div avatar-img avatar-src="presenter.avatar" avatar-alt="presenter.name" ng-repeat="presenter in training.presenters"></div> -->
+	  <p class="article__meta">Presented by: <span ng-repeat="pres in training.presenters"><a ng-href="/participants/{{pres.id}}" class="article__presenter">{{pres.name}}</a><span ng-show="!$last">, </span></span></p>
+	</header>
+	<p class="article__meta">
+	  <a ng-href="#/rooms/{{training.room.id}}" class="article__meta--space">{{training.room.name}}</a>
+	  @<span class="article__meta--time">{{training.startTime | amDateFormat:'h:mm a'}}</span>
+	</p>
+	<section class="article__desc" ng-model="training.description" ng-bind-html="training.description">
+	  {{training.description}}
+	</section>
+</article>

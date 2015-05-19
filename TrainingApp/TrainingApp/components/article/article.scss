@@ -1,0 +1,101 @@
+// ================================================================================
+// COMPONENT LEVEL: SASS
+// article
+// Only contains Sass for this component.
+// ================================================================================
+
+// ------------------------------------------------------------------------------
+// COMPONENT LEVEL: BEM BLOCK
+// ------------------------------------------------------------------------------
+
+.article {
+// ------------------------------------------------------------------------------
+// COMPONENT LEVEL: VARIABLES
+// ------------------------------------------------------------------------------
+
+  $padding: 2em;
+
+// ------------------------------------------------------------------------------
+
+  padding: $padding;
+  overflow-x: hidden;
+
+  &__header {
+    margin: 0;
+  }
+
+  &__headline {
+    margin: 0;
+    font-size: 1.4em;
+    line-height: 1.2;
+  }
+
+  &__avatar {
+    clear: both;
+    float: right;
+    position: relative;
+    margin: 0 -#{$padding} 0 0;
+    transform: translateX(50%);
+
+    .avatar__img {
+        transform: translateX(-25%);
+    }
+  }
+
+  &__desc {
+    /* margin-top: .5em; */
+
+    & > :first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__edit-toggle-checkbox {
+    display: none;
+
+    &:checked + label {
+      background: $color--primary;
+    }
+  }
+
+  &__edit-toggle {
+    background: $color--meta;
+    cursor: pointer;
+    float: right;
+    height: 2em;
+    line-height: 1.4;
+    transform: translateX(2em);
+    width: 2em;
+
+    &::before {
+      content: '\270E';
+      display: block;
+      font-size: 1.6em;
+      text-align: center;
+      color: $color--white;
+      line-height: 1.4em;
+      transform: rotateZ(90deg) translateZ(1em);
+    }
+  }
+
+  &__meta {
+    color: $color--black;
+    font-style: italic;
+    font-size: .8em;
+    margin: .5em 0;
+
+    a {
+      opacity: .4;
+      transition: opacity .25s linear;
+
+      &:hover {
+        opacity: .6;
+      }
+    }
+
+    &--time {
+      color: $color--body;
+      margin-top: 2em;
+    }
+  }
+}

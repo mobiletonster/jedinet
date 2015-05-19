@@ -1,0 +1,103 @@
+[
+  {
+    "id": 1,
+    "name": "Carrying the Ring 101",
+    "description": "<p>Mock: Avoiding Orcs is the least of your worries</p>",
+    "presenters": [
+      {
+        "name": "Frodo Baggins",
+        "id": 1
+      },
+      {
+        "name": "Samwise Gamgee",
+        "id": 2
+      }
+    ],
+    "room": {
+      "id": 1,
+      "name": "E230",
+      "capacity": 10
+    },
+    "startTime": "2014-12-30T21:29:45.730Z",
+    "endTime": "2014-12-30T21:29:45.730Z",
+    "attendeeCount": 0
+  },
+  {
+    "id": 2,
+    "name": "Dealing with Gollum, the good, the bad, and the smelly",
+    "description": "<p>Mock: He is a pittiable creature, torn apart by the ring of power. But be ware, he will snap your neck in an instant when his darker side is in control.</p>",
+    "presenters": [
+      {
+        "name": "Frodo Baggins",
+        "id": 1
+      }
+    ],
+    "room": {
+      "id": 3,
+      "name": "E236",
+      "capacity": 20
+    },
+    "startTime": "2015-01-05T20:30:57.060Z",
+    "endTime": "2015-01-05T21:30:57.060Z",
+    "attendeeCount": 27
+  },
+  {
+    "id": 3,
+    "name": "Building a better garden in your own backyard",
+    "description": "<p>Mock: If you are unable to get your hands on a box of blessed soil, I've got the next best thing.</p>",
+    "presenters": [
+      {
+        "name": "Samwise Gamgee",
+        "id": 2
+      }
+    ],
+    "room": {},
+    "startTime": "2015-01-05T20:30:57.060Z",
+    "endTime": "2015-01-05T21:30:57.060Z",
+    "attendeeCount": 12
+  },
+  {
+    "id": 4,
+    "name": "Advanced Swordplay for Small people",
+    "description": "<p>Mock: Using your opponents size -- and underestimation of you -- aginst him.</p>",
+    "presenters": [
+      {
+        "name": "Meriadoc \"Merry\" Brandybuck",
+        "id": 3,
+        "biography": "",
+        "trainings": [],
+        "avatar": "url-to-image"
+      }
+    ],
+    "room": {
+      "id": 3,
+      "name": "E236",
+      "capacity": 20
+    },
+    "startTime": "2015-01-05T20:30:57.060Z",
+    "endTime": "2015-01-05T21:30:57.060Z",
+    "attendeeCount": 8
+  },
+  {
+    "id": 5,
+    "name": "Mock Training",
+    "description": "<p>You are using mock data.</p>",
+    "presenters": [
+      {
+        "name": "Mock Presenter",
+        "id": 5,
+        "biography": "",
+        "trainings": [],
+        "avatar": "url-to-image"
+      }
+    ],
+    "room": {
+      "id": 5,
+      "name": "MockRoom",
+      "capacity": 55
+    },
+    "startTime": "2015-01-05T21:30:57.060Z",
+    "endTime": "2015-01-05T22:30:57.060Z",
+    "attendeeCount": 9
+  }
+]

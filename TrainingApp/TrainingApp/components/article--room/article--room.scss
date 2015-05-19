@@ -1,0 +1,35 @@
+// ================================================================================
+// COMPONENT LEVEL: SASS
+// article--room
+// Only contains Sass for this component.
+// ================================================================================
+
+// ------------------------------------------------------------------------------
+// COMPONENT LEVEL: VARIABLES
+// ------------------------------------------------------------------------------
+
+
+
+// ------------------------------------------------------------------------------
+// COMPONENT LEVEL: BEM BLOCK
+// ------------------------------------------------------------------------------
+
+.articleRoom {
+
+  // Example: variable use
+  font-family: $font-family--primary;
+
+  // BEM ELEMENTS
+  &__example-element {
+
+    // Example: variable use
+    font-family: $font-family--primary;
+  }
+
+  // BEM MODIFIERS
+  &--example-modifier {
+
+    // Example: variable use
+    font-family: $font-family--primary;
+  }
+}

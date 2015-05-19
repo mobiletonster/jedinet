@@ -1,0 +1,40 @@
+// ================================================================================
+// COMPONENT LEVEL: SASS
+// navi
+// Only contains Sass for this component.
+// ================================================================================
+
+// ------------------------------------------------------------------------------
+// COMPONENT LEVEL: VARIABLES
+// ------------------------------------------------------------------------------
+
+
+
+// ------------------------------------------------------------------------------
+// COMPONENT LEVEL: BEM BLOCK
+// ------------------------------------------------------------------------------
+
+.nav {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: space-between;
+  color: $color--primary;
+
+  &__item {
+    padding: .45em;
+    flex: 1 0 auto;
+    text-align: center;
+
+    &--active {
+      background: $color--primary;
+      color: $color--white;
+    }
+
+    &:first-child {
+      text-align: left;
+    }
+    &:last-child {
+      text-align: right;
+    }
+  }
+}

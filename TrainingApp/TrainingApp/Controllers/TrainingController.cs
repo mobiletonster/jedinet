@@ -4,13 +4,14 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using TrainingApp.ExternalServices;
 using TrainingApp.Security;
 using TrainingApp.Services;
 using TrainingApp.ViewModels;
 
 namespace TrainingApp.Controllers
 {
-    [AuthorizeClientApp]
+    //[AuthorizeClientApp]
     public class TrainingController : ApiController
     {
         private TrainingService _trainingService;
@@ -25,7 +26,7 @@ namespace TrainingApp.Controllers
         }
 
         [HttpGet]
-        [Route("api/trainings")]
+        [Route("api/v2/trainings")]
         public List<TrainingViewModel> GetTrainingsViewModel()
         {
             var trainings = _trainingService.GetTrainings();
@@ -39,7 +40,7 @@ namespace TrainingApp.Controllers
                 var trainPres = trainingPresenters.Where(m => m.TrainingId == t.Id);
                 var p = (from pres in presenters join tp in trainPres on pres.Id equals tp.PresenterId select pres).ToList();
                 var r = rooms.Where(m => m.Id == t.RoomId).FirstOrDefault();
-                var trainingViewModel = new TrainingViewModel(t,p,r);
+                var trainingViewModel = new TrainingViewModel(t, p, r);
                 tvm.Add(trainingViewModel);
             }
 
