@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using TrainingApp.Security;
 
 namespace TrainingApp
 {
@@ -13,6 +14,8 @@ namespace TrainingApp
             // Web API configuration and services
 
             config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+
+            config.MessageHandlers.Add(new TracingHandler());
 
             // Web API routes
             config.MapHttpAttributeRoutes();
