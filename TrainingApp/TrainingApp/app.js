@@ -3,7 +3,7 @@ angular.module('class-scheduling', ['ngResource', 'ngRoute', 'ngSanitize', 'angu
     .config(['$routeProvider', '$locationProvider', function($routeProvider, $location){
         'use strict';
 
-        $location.html5Mode(false);
+        $location.html5Mode(true);
         //setup URL routes
         $routeProvider.when('/trainings', {
         	templateUrl: 'components/article--training/article--training-template.html',

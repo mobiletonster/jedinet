@@ -22,6 +22,24 @@ namespace TrainingApp
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            // Default Routes
+            config.Routes.MapHttpRoute(
+                name: "Angular",
+                routeTemplate: "{url}",
+                defaults: new { controller="Angular" }
+            );
+
+            //,
+            //constraints: null,
+            //    handler:
+            //new AngularHandler(GlobalConfiguration.Configuration)
+
+            //config.Routes.MapHttpRoute(
+            //   name: "Default",
+            //   routeTemplate: "{*url}",
+            //   defaults: new { action = "Index.html" }
+            //);
         }
     }
 }
