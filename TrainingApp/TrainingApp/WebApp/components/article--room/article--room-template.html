@@ -1,0 +1,18 @@
+<article class="article article--participant" edit-toggler ng-repeat="room in rooms">
+	<input type="checkbox" class="article__edit-toggle-checkbox" id="edit-" />
+	<label class="article__edit-toggle" for="edit-">
+	</label>
+	<header class="article__header">
+	    <h1 class="article__headline" ng-model="room.name"></h1>
+	</header>
+	<section ng-repeat="training in room.trainings">
+	    <p class="article__meta article__meta--time">
+	        {{training.name}}
+	    </p>
+	    <p class="article__meta">
+	        <a ng-href="/trainings/"
+	           class="article__training"></a>
+	    </p>
+	    <p class="article__meta">Presented by: <span ng-repeat="pres in training.presenters"><a ng-href="/participants/" class="article__presenter"></a><span ng-show="!$last">, </span></span></p>
+    </section>
+</article>

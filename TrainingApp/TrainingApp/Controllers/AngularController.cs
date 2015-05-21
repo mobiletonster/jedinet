@@ -15,7 +15,7 @@ namespace TrainingApp.Controllers
         public HttpResponseMessage Get()
         {
             var response = new HttpResponseMessage();
-            response.Content = new StreamContent(File.Open(AppDomain.CurrentDomain.BaseDirectory + "index.html", FileMode.Open));
+            response.Content = new StreamContent(File.Open(AppDomain.CurrentDomain.BaseDirectory + "WebApp/index.html", FileMode.Open));
             return response;
         }
     }
