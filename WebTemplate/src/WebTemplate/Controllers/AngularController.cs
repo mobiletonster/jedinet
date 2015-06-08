@@ -14,8 +14,8 @@ namespace WebTemplate.Controllers
     public class AngularController : Controller
     {
         // GET: api/values
-        [HttpGet]
-        [Route("{url}")]
+        // [HttpGet]
+        //[Route("{url}")]
         public IActionResult Get()
         {
             
