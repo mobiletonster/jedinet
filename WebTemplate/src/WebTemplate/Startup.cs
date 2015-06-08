@@ -6,6 +6,7 @@ using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Http;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.AspNet.Hosting;
+using Microsoft.AspNet.StaticFiles;
 
 namespace WebTemplate
 {
@@ -24,8 +25,7 @@ namespace WebTemplate
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             app.UseStaticFiles();
-            app.UseMvc();
-            
+            app.UseMvc();            
         }
     }
 }

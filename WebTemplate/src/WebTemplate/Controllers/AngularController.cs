@@ -18,6 +18,7 @@ namespace WebTemplate.Controllers
         [Route("{url}")]
         public IActionResult Get()
         {
+            
             // return View("index.html");
             return File("index.html","text/html");
             
