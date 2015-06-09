@@ -13,7 +13,7 @@ namespace WebTemplate.Controllers
     public class AngularController : Controller
     {
         // GET: api/values
-        [HttpGet]
+        //[HttpGet]
         //public HttpResponseMessage Get()
         //{
         //    var response = new HttpResponseMessage();
