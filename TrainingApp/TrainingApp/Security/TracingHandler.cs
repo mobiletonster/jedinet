@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -15,11 +16,15 @@ namespace TrainingApp.Security
         HttpRequestMessage request, CancellationToken cancellationToken)
         {
             Debug.WriteLine("Process request " + request.RequestUri.AbsoluteUri);
-            // Call the inner handler.
-            var response = await base.SendAsync(request, cancellationToken);
-            Debug.WriteLine("Process response");
-            return response;
-        }
+                var response = await base.SendAsync(request, cancellationToken);
+                Debug.WriteLine("Process response");
+                return response;
 
+            // Call the inner handler.
+
+            //}
+        }
     }
+
+
 }

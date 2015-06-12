@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Formatting;
+using System.Threading.Tasks;
 using System.Web;
 using TrainingApp.Models;
 using TrainingApp.ViewModels;
@@ -15,15 +16,16 @@ namespace TrainingApp.ExternalServices
         {
 
         }
-        public List<Presenter> GetPresenters()
+        public async Task<List<Presenter>> GetPresentersAsync()
         {
             HttpClient client = new HttpClient();
             var url = "http://csa-repo.app.lds.org/conference-scheduling/v1/participants";
-            var response = client.GetAsync(url).Result;
-            var presenters = response.Content.ReadAsAsync<List<Presenter>>().Result;
+            var response = await client.GetAsync(url);
+            var presenters = await response.Content.ReadAsAsync<List<Presenter>>();
             return presenters.OrderBy(m => m.Name).ToList();
         }
 
+        
         public List<TrainingViewModel> GetTrainings()
         {
             HttpClient client = new HttpClient();

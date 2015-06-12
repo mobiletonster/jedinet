@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web.Http;
 using TrainingApp.ExternalServices;
 using TrainingApp.Models;
@@ -29,9 +30,9 @@ namespace TrainingApp.Controllers
 
         [HttpGet]
         [Route("api/participants")]
-        public List<Presenter> GetPresenters()
+        public async Task<List<Presenter>> GetPresentersAsync()
         {
-            var presenters = _classScheduleService.GetPresenters();
+            var presenters = await _classScheduleService.GetPresentersAsync();
             return presenters.OrderBy(m => m.Name).ToList();
         }
 
