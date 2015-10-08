@@ -29,6 +29,13 @@ namespace WebTemplate.Controllers
             //response.Body = fileStream;
             //return response;
         }
+        //[HttpGet]
+        //public HttpResponseMessage Get()
+        //{
+        //    var response = new HttpResponseMessage();
+        //    response.Content = new StreamContent(File.Open(AppDomain.CurrentDomain.BaseDirectory + "index.html", FileMode.Open));
+        //    return response;
+        //}
     }
 }
 

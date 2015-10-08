@@ -28,10 +28,16 @@ namespace TrainingApp
 
             // Default Routes
             config.Routes.MapHttpRoute(
-                name: "Angular",
-                routeTemplate: "{url}",
+                name: "ExtensionlessDefault",
+                routeTemplate: "",
                 defaults: new { controller="Angular" }
             );
+            config.Routes.MapHttpRoute(
+                name: "AngularDefault",
+                routeTemplate: "{url}",
+                defaults: new { controller = "Angular" }
+            );
+
 
             //,
             //constraints: null,
