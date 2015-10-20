@@ -25,7 +25,13 @@ namespace WebTemplate
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             app.UseStaticFiles();
-            app.UseMvc();            
+            app.UseMvc(routes=> {
+                routes.MapRoute("Angular",
+                "{*url}",
+                defaults: new { controller = "Angular",action="Get"});
+            });           
+            
+             
         }
     }
 }
