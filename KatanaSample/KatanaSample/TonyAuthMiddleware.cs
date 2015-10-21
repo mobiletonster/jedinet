@@ -11,6 +11,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace Owin.Security.Providers.TonyAuth
 {
@@ -20,6 +21,16 @@ namespace Owin.Security.Providers.TonyAuth
         private readonly ILogger logger;
         public TonyAuthMiddleware(OwinMiddleware next, IAppBuilder app, TonyAuthOptions options):base(next,options)
         {
+            if (String.IsNullOrWhiteSpace(Options.ClientId))
+            {
+                throw new ArgumentException(String.Format(CultureInfo.CurrentCulture, "Option must be provided {0}", "ClientId"));
+            }
+
+            if (String.IsNullOrWhiteSpace(Options.ClientSecret))
+            {
+                throw new ArgumentException(String.Format(CultureInfo.CurrentCulture, "Option must be provided {0}", "ClientSecret"));
+            }
+
             logger = app.CreateLogger<TonyAuthMiddleware>();
         }
 

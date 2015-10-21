@@ -5,6 +5,13 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KatanaSample", "KatanaSample\KatanaSample.csproj", "{CF58DAB2-3790-4501-899E-F37D1AB47761}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9A134730-9FE1-42C7-823E-53B70DBFC856}"
+	ProjectSection(SolutionItems) = preProject
+		Tony.Provider\global.json = Tony.Provider\global.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TonyProvider", "TonyProvider\TonyProvider.csproj", "{52F0BA4E-0C82-49A3-8D76-1AC0FD9DB6A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{CF58DAB2-3790-4501-899E-F37D1AB47761}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF58DAB2-3790-4501-899E-F37D1AB47761}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF58DAB2-3790-4501-899E-F37D1AB47761}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52F0BA4E-0C82-49A3-8D76-1AC0FD9DB6A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52F0BA4E-0C82-49A3-8D76-1AC0FD9DB6A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52F0BA4E-0C82-49A3-8D76-1AC0FD9DB6A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52F0BA4E-0C82-49A3-8D76-1AC0FD9DB6A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

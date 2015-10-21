@@ -1,5 +1,5 @@
 ﻿using Owin;
-using Owin.Security.Providers.TonyAuth;
+using Owin.Security.Providers.Tony;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,15 +12,8 @@ namespace KatanaSample
     {
         public void Configuration(IAppBuilder app)
         {
-            var options = new TonyAuthOptions();
-            app.UseTonyAuth(options);
-
-            //app.Run(context =>
-            //{
-            //    context.Response.ContentType =
-            //    "text/plain";
-            //    return context.Response.WriteAsync("Hello, world.");
-            //});
+            var options = new TonyAuthenticationOptions("BobFredBob","SecretCombinations");
+            app.UseTonyAuthentication(options);
         }
 
     }
