@@ -12,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TonyProvider", "TonyProvider\TonyProvider.csproj", "{52F0BA4E-0C82-49A3-8D76-1AC0FD9DB6A5}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "KatanaSampleNext", "KatanaSampleNext\KatanaSampleNext.xproj", "{2AB8BDC7-C720-41C2-9E75-F26EB0B0F3A7}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TonyAuth", "TonyAuth\TonyAuth.xproj", "{8C63E805-7E6A-4C7F-9704-AD08151401E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +30,14 @@ Global
 		{52F0BA4E-0C82-49A3-8D76-1AC0FD9DB6A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52F0BA4E-0C82-49A3-8D76-1AC0FD9DB6A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52F0BA4E-0C82-49A3-8D76-1AC0FD9DB6A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AB8BDC7-C720-41C2-9E75-F26EB0B0F3A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AB8BDC7-C720-41C2-9E75-F26EB0B0F3A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AB8BDC7-C720-41C2-9E75-F26EB0B0F3A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AB8BDC7-C720-41C2-9E75-F26EB0B0F3A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C63E805-7E6A-4C7F-9704-AD08151401E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C63E805-7E6A-4C7F-9704-AD08151401E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C63E805-7E6A-4C7F-9704-AD08151401E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C63E805-7E6A-4C7F-9704-AD08151401E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
