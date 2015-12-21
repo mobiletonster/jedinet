@@ -1,0 +1,39 @@
+﻿<!doctype html>
+<html lang="en" ng-app="class-scheduling">
+    <head>
+        <meta charset="utf-8">
+        <title>class-scheduling</title>
+        <!-- ref:css app.css -->
+        <link rel="stylesheet" href="http://localhost:3000/build/app.css">
+        <!-- endref -->
+
+        <base href="/">
+    </head>
+    <body>
+      <main>
+        <nav-directive></nav-directive>
+        <div ng-view></div>
+      </main>
+
+        <script src="http://localhost:3000/build/lib/angular/angular.min.js"></script>
+        <script src="http://localhost:3000/build/lib/angular-route/angular-route.min.js"></script>
+        <script src="http://localhost:3000/build/lib/angular-resource/angular-resource.min.js"></script>
+        <script src="http://localhost:3000/build/lib/angular-sanitize/angular-sanitize.min.js"></script>
+        <script src="http://localhost:3000/build/lib/moment/min/moment.min.js"></script>
+        <script src="http://localhost:3000/build/lib/angular-moment/angular-moment.min.js"></script>
+
+        <!-- ref:js app.js -->
+        <script src="http://localhost:3000/build/app.js"></script>
+        <script src="http://localhost:3000/build/components/nav/nav-directive.js"></script>
+        <script src="http://localhost:3000/build/components/article--training/article--training-controller.js"></script>
+        <script src="http://localhost:3000/build/components/article--training/article--training-service.js"></script>
+        <script src="http://localhost:3000/build/components/article--participant/article--participant-controller.js"></script>
+        <script src="http://localhost:3000/build/components/article--participant/article--participant-service.js"></script>
+        <!-- TODO add article--room-controller.js and article--room-service.js -->
+      <!--  <script src="http://localhost:3000/build/components/article--room/article--room-service.js"></script>
+        <script src="http://localhost:3000/build/components/article--room/article--room-controller.js"></script> -->
+        <script src="http://localhost:3000/build/components/edit-toggler/edit-toggler-directive.js"></script>
+        <script src="http://localhost:3000/build/components/avatar/avatar-directive.js"></script>
+        <!-- endref -->
+    </body>
+</html>
