@@ -19,9 +19,10 @@ namespace App.Services
 
         public List<PersonVM> GetPersons()
         {
-            var persons = _repository.GetPersons().Select(m=>new PersonVM(m,null)).ToList();
+            var persons = _repository.GetPersons().Select(p => new PersonVM(p)).ToList();
             return persons;
         }
+
         public PersonVM GetCompletePersonById(int id)
         {
             var person = _repository.GetPersonById(id);
@@ -42,7 +43,6 @@ namespace App.Services
             // tables, etc.
             var p = Factory.PersonFactory(person);
             var a = Factory.AddressesFactory(person);
-
 
             return person;
         }

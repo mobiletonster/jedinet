@@ -13,14 +13,24 @@ namespace App.Services
         {
 
         }
+
+        public PersonVM(Person p)
+        {
+            ConstructPersonPart(p);
+        }
         public PersonVM(Person p, List<Address> a)
+        {
+            ConstructPersonPart(p);
+            Addresses = a;
+        }
+
+        private void ConstructPersonPart(Person p)
         {
             Id = p.Id;
             FirstName = p.FirstName;
             LastName = p.LastName;
             BirthDate = p.BirthDate;
             Username = p.Username;
-            Addresses = a;
         }
         public int Id { get; set; }
         public string FirstName { get; set; }
