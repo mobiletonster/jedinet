@@ -16,6 +16,12 @@ namespace App.Services
         {
             _repository = new Repository();
         }
+
+        public List<PersonVM> GetPersons()
+        {
+            var persons = _repository.GetPersons().Select(m=>new PersonVM(m,null)).ToList();
+            return persons;
+        }
         public PersonVM GetCompletePersonById(int id)
         {
             var person = _repository.GetPersonById(id);

@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using SampleWebApi.Web.Formatters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +29,8 @@ namespace SampleWebApi
             {
                 SerializerSettings = new JsonSerializerSettings { ContractResolver = new CamelCasePropertyNamesContractResolver() }
             };
+
+            config.Formatters.Add(new CSVMediaTypeFormatter());
 
         }
     }

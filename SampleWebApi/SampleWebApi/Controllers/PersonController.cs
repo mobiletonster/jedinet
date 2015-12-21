@@ -19,6 +19,13 @@ namespace SampleWebApi.Controllers
             peopleService = new PeopleService();
         }
 
+        [Route("api/persons")]
+        [HttpGet]
+        public List<PersonVM> GetPersons()
+        {
+            return peopleService.GetPersons();
+        }
+
         [Route("api/persons/{id:int}")]
         [HttpGet]
         public PersonVM GetCompletePerson(int id)
